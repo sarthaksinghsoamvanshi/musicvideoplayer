@@ -239,76 +239,77 @@ class HomePage extends StatelessWidget {
       body: Container(
         height: double.infinity,
         width: double.infinity,
-        // color:
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-              begin: Alignment.bottomCenter,
-              end: Alignment.topCenter,
-              colors: [Colors.black, Colors.black, Colors.black, Colors.black]),
-        ),
+        color:Colors.black,
+        // decoration: BoxDecoration(
+        //   gradient: LinearGradient(
+        //     begin: Alignment.bottomCenter,
+        //     end: Alignment.topCenter,
+        //   ),
+
+        // ),
         child: ListView(
-          //   padding: EdgeInsets.all(5),
+            padding: EdgeInsets.all(5),
           children: <Widget>[
-            //     expandedappbar,
-            //     SizedBox(
-            //       height: 20,
-            //       child: Padding(
-            //         padding: const EdgeInsets.only(left: 10.0),
-            //         child: Text(
-            //           "TOP ARTISTS",
-            //           style: TextStyle(
-            //               color: col2, fontSize: 17, fontWeight: FontWeight.bold),
-            //         ),
-            //       ),
-            //     ),
-            //     Artist(),
-            //     Container(
-            //       height: 20,
-            //       padding: const EdgeInsets.only(left: 10.0),
-            //       margin: EdgeInsets.only(bottom: 10),
-            //       // margin:EdgeInsets.all(left),
-            //       child: Text(
-            //         "TOP ALBUMS",
-            //         style: TextStyle(
-            //             color: col2, fontSize: 17, fontWeight: FontWeight.bold),
-            //       ),
-            //     ),
-            //     Trending(),
-            //     ListTile(
-            //       title: Text(
-            //         "VIDEOS",
-            //         style: TextStyle(color: Colors.white),
-            //       ),
-            //       trailing: CircleAvatar(
-            //           backgroundColor: Colors.white,
-            //           child: IconButton(
-            //               icon: Icon(
-            //                 Icons.music_video,
-            //                 color: Colors.black,
-            //               ),
-            //               onPressed: () async => {
-            //                     // path = await AudioPicker.pickAudio(),
-            //                     // ignore: await_only_futures
-            //                     // file = FilePicker.getFilePath() as File,
-            //                     _images = await FilePicker.getFile(),
-            //                     Navigator.of(context).push(
-            //                       MaterialPageRoute(
-            //                         builder: (context) => Song2Page(
-            //                           fslist: [
-            //                             [
-            //                               "LOCAL VIDEO",
-            //                               _images,
-            //                             ],
-            //                           ],
-            //                           index: 0,
-            //                           type: 1,
-            //                         ),
-            //                       ),
-            //                     ),
-            //                   })),
-            //     ),
+                expandedappbar,
+                SizedBox(
+                  height: 20,
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
+                    child: Text(
+                      "TOP ARTISTS",
+                      style: TextStyle(
+                          color: col2, fontSize: 17, fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ),
+                Artist(),
+                Container(
+                  height: 20,
+                  padding: const EdgeInsets.only(left: 10.0),
+                  margin: EdgeInsets.only(bottom: 10),
+                  // margin:EdgeInsets.all(left),
+                  child: Text(
+                    "TOP ALBUMS",
+                    style: TextStyle(
+                        color: col2, fontSize: 17, fontWeight: FontWeight.bold),
+                  ),
+                ),
+                Trending(),
+                ListTile(
+                  title: Text(
+                    "VIDEOS",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  trailing: CircleAvatar(
+                      backgroundColor: Colors.white,
+                      child: IconButton(
+                          icon: Icon(
+                            Icons.music_video,
+                            color: Colors.black,
+                          ),
+                          onPressed: () async => {
+                                // path = await AudioPicker.pickAudio(),
+                                // ignore: await_only_futures
+                                // file = FilePicker.getFilePath() as File,
+                                _images = await FilePicker.getFile(),
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) => Song2Page(
+                                      fslist: [
+                                        [
+                                          "LOCAL VIDEO",
+                                          _images,
+                                        ],
+                                      ],
+                                      index: 0,
+                                      type: 1,
+                                    ),
+                                  ),
+                                ),
+                              })),
+                ),
             expandedappbar1,
-            //     Artistss()
+                Artistss()
           ],
           // ),
         ),
